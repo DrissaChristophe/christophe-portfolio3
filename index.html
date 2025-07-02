@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website1 with ch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my Website</h1>
+        <p>This is my first front end project!</p>
+    </header>
+
+  <nav>
+  <div class="nav-container">
+    <span class="logo">Christophe</span>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>About me</h2>
+            <p>Hi! I'm Christophe, a front-end development intern. I love building websites and learning new things about coding every day!</p>
+        </section>
+
+        <section>
+            <h2>My Projects</h2>
+            <ul>
+                <li> Portfolio Website (in progress)</li>
+                <li> To-Do List App using HTML, CSS & JS</li>
+                <li> Simple CSS Animation Playground</li>
+            </ul>
+        </section>
+
+<!-- Contact Section -->
+        <section>
+            <h2>Contact Me</h2>
+            <p>You can reach me at: <a href="mailto:drissachristophekonate@gmail.com">drissachristophekonate@gmail.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Christophe. All rights reserved.</p>
+    </footer>
+
+    <!--This is a javaScript prompt-->
+    <script>
+  function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    nav.classList.toggle("show");
+  }
+</script>
+</body>
+</html>

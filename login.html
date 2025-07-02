@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login web</title>
+    <link rel="stylesheet" href="style.css">
+
+      <style>
+    body {
+      background-color: #f4f4f4;
+    }
+    #loginContainer {
+      max-width: 300px;
+      margin: 100px auto;
+      padding: 30px;
+      background: white;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    #loginContainer input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    #loginContainer button {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+<body>
+     <div id="loginContainer">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username"><br>
+    <input type="password" id="password" placeholder="Password"><br>
+    <button onclick="login()">Login</button>
+    <p id="loginError" style="color: red; display: none;">Wrong username or password</p>
+  </div>
+
+  <script>
+    function login() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      const correctUsername = "admin";
+      const correctPassword = "1234";
+
+      if (username === correctUsername && password === correctPassword) {
+        // Redirect to the main site
+        window.location.href = "index.html";
+      } else {
+        document.getElementById("loginError").style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
